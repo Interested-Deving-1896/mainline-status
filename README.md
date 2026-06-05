@@ -1,47 +1,75 @@
-# A set of GitHub pages describing the status of various Qualcomm platforms.
+[update-readmes]   Mode: rewrite — migrating to template structure...
+# mainline-status
 
-## Testing it locally
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/mainline-status)
 
-- Install Ruby and bundler:
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-  ```bash
-  sudo apt install bundler
-  ```
+## Architecture
 
-- Setup bundler to use user path for all the storage:
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-  ```bash
-  bundle config set --local path ~/.local/lib/
-  ```
+## Install
 
-- Install all the dependencies:
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
-  ```bash
-  bundle install
-  ```
+```bash
+git clone https://github.com/Interested-Deving-1896/mainline-status.git
+cd mainline-status
+```
 
-- Just rebuild the data:
-  ```
-  ./regen.py
-  bundle exec jekyll build
-  ```
-  Now you can check the HTML data built in `./_site/`.
+## Usage
 
-- Or execute a local Jekyll server, providing an ongoing preview:
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
 
-  ```bash
-  bundle exec jekyll serve
-  ```
+## Configuration
 
-  Now you can open [localhost:4000](http://127.0.0.1:4000/mainline-status/) with your Web
-  browser. Jekyll will automatically regenerate the pages if any of the source
-  files changes.
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
 
-## Add new SoC / PMIC
+## CI
 
-Base your new file in either `./_soc/` or `./_pmic/` on `_soc.template` or
-`_pmic.template` respectively. If those files do not exist yet in your tree,
-call `./regen.py`!
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
 
-For an SoC file you can additionally specify the key `pmic:` where you can
-reference PMICs which are usually bundled with a given SoC.
+## Mirror chain
+
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/mainline-status`](https://github.com/Interested-Deving-1896/mainline-status) and mirrored through:
+
+```
+Interested-Deving-1896/mainline-status  ──►  OpenOS-Project-OSP/mainline-status  ──►  OpenOS-Project-Ecosystem-OOC/mainline-status
+```
+
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
+
+## Contributors
+
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
+
+## Origins
+
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
+
+## Resources
+
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
+
+## License
+
+<!-- AI:start:license -->
+[MIT](https://github.com/Interested-Deving-1896/mainline-status/blob/trunk/LICENSE) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- AI:end:license -->
